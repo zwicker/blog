@@ -7,6 +7,14 @@ dependencies:
     - docker info
     - docker build -t zwicker/blog .
 
+database:
+  override:
+    - echo "Skipping"
+
+test:
+  override:
+    - echo "Skipping"
+
 deployment:
   hub:
     branch: master
